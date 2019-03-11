@@ -18,8 +18,8 @@ def get_japanese_emoticon(path, emote)
   # code goes here
   emojis = load_library(path)
   emoji = "Sorry, that emoticon was not found"
-    emojis["get_emoticon"].each do |murica, nihon|
-      if murica == emote 
+    emojis["get_emoticon"].each do |eng_emote, jp_emote|
+      if eng_emote == emote 
         emoji = nihon
       end
     end
