@@ -20,7 +20,7 @@ def get_japanese_emoticon(path, emote)
   emoji = "Sorry, that emoticon was not found"
     emojis["get_emoticon"].each do |eng_emote, jp_emote|
       if eng_emote == emote 
-        emoji = nihon
+        emoji = jp_emote
       end
     end
   emoji
