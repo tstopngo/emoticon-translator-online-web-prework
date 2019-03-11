@@ -5,7 +5,7 @@ require 'pry'
 def load_library(path)
   # code goes here
   emojis = YAML.load_file(path)
-  emojis_hash = {}
+  emojis_hash = {["get_emoticon"] = {},}
   
   emojis_hash["get_emoticon"] = {}
   emojis_hash["get_meaning"]  = {}
